@@ -68,3 +68,8 @@ variable "num_tunnels" {
     Total number of VPN tunnels. This needs to be in multiples of 2.
   EOF
 }
+
+variable "advertised_ip_ranges" {
+  type        = list(string)
+  description = "List of ip ranges to be advertised in the cloud router."
+}
